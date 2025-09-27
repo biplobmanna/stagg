@@ -1,0 +1,91 @@
+name: Bug Report
+about: Report a bug to help us improve Stagg
+labels:
+  - bug
+  - triage
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ℹ️ **Notice:**
+        > This repository is a hobby project maintained by a new Go developer. 🧑‍💻
+        > Issue review and resolution are performed at the maintainer's discretion and may occur as time permits. ⏳
+        > Your patience and understanding are appreciated. 🙏
+
+  - type: input
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: Briefly describe the bug.
+      placeholder: e.g. "The generator fails on large markdown files."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Run '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots-logs
+    attributes:
+      label: Screenshots / Logs
+      description: If applicable, add screenshots or logs to help explain your problem.
+    validations:
+      required: false
+
+  - type: input
+    id: environment-os
+    attributes:
+      label: OS
+      description: What operating system are you using?
+    validations:
+      required: false
+
+  - type: input
+    id: environment-go
+    attributes:
+      label: Go version
+      description: What version of Go are you using?
+    validations:
+      required: false
+
+  - type: input
+    id: environment-stagg
+    attributes:
+      label: Stagg version
+      description: What version of Stagg are you using?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the bug here.
+    validations:
+      required: false

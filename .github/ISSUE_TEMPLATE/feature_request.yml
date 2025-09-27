@@ -1,0 +1,58 @@
+name: Feature Request
+about: Suggest a new feature or enhancement for Stagg
+labels:
+  - enhancement
+  - triage
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ℹ️ **Notice:**
+        > This repository is a hobby project maintained by a new Go developer. 🧑‍💻
+        > Issue review and resolution are performed at the maintainer's discretion and may occur as time permits. ⏳
+        > Your patience and understanding are appreciated. 🙏
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Briefly describe the feature or enhancement you are requesting.
+      placeholder: e.g. "Add support for custom themes."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature important? What problem does it solve?
+      placeholder: "This feature will allow users to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution or approach.
+      placeholder: "Implement a plugin system for themes."
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: List any alternative solutions or features you have considered.
+      placeholder: "Alternatively, allow users to override CSS files."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples here.
+    validations:
+      required: false
